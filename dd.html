@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort Visualizer</title>
+    <link rel="stylesheet" href="daa.css">
+</head>
+<body>
+    <h1>Merge Sort Visualizer</h1>
+
+    <input type="text" id="userArray" placeholder="Enter numbers separated by commas">
+    <button onclick="setUserArray()">Set Array</button>
+    <button onclick="generateArray()">Generate Random Array</button>
+    <button onclick="mergeSortWrapper()">Sort</button>
+
+    <!-- Unsorted and Sorted Array Section Side by Side -->
+    <div class="array-display">
+        <div>
+            <h2>Unsorted Array</h2>
+            <p id="unsortedArray"></p>
+        </div>
+        <div>
+            <h2>Sorted Array</h2>
+            <p id="sortedArray"></p>
+        </div>
+    </div>
+
+    <div id="array-container"></div>
+
+    <p id="timeTaken"></p>
+
+    <script src="daa.js"></script>
+</body>
+</html>
